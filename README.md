@@ -12,3 +12,15 @@ Bootcamp for IOT usin arduino and nodemcu.
       digitalWrite(4,LOW);
       delay(1000);
       }
+
+### LDR data_serial-data
+
+    void setup() {
+      Serial.begin(9600);   // initialize serial communication at 9600 BPS
+    }
+    void loop() {
+
+      int ldr = analogRead(A0);   // read the input on analog pin 0
+      Serial.println(ldr);   // print out the value you read
+
+    }
